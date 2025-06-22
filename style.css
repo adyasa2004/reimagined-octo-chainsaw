@@ -1791,3 +1791,64 @@
     font-family: 'FKGroteskNeue';
     src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
   }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px;
+}
+
+h1, h2, h3 {
+  color: #2e3a59;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.kpi-card {
+  display: inline-block;
+  background: #eef1f7;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.kpi-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1d3557;
+}
+
+.kpi-label {
+  font-size: 0.85rem;
+  color: #5c6784;
+}
+
+@media (max-width: 768px) {
+  .kpi-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .section {
+    margin: 12px;
+    padding: 16px;
+  }
+}
