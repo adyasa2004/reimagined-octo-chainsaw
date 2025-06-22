@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Retail Co. - Inventory Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="company-info">
+                    <h1 class="company-name">Urban Retail Co.</h1>
+                    <p class="dashboard-subtitle">Inventory Management Dashboard</p>
+                </div>
+                <div class="header-stats">
+                    <div class="header-stat">
+                        <span class="stat-value">$9.52M</span>
+                        <span class="stat-label">Total Inventory</span>
+                    </div>
+                    <div class="header-stat">
+                        <span class="stat-value">20</span>
+                        <span class="stat-label">Stores</span>
+                    </div>
+                    <div class="header-stat">
+                        <span class="stat-value">100%</span>
+                        <span class="stat-label">Fill Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-main">
+        <div class="container">
+            
+            <!-- Executive Summary Section -->
+            <section class="dashboard-section" id="executive-summary">
+                <h2 class="section-title">Executive Summary</h2>
+                <div class="kpi-grid">
+                    <div class="kpi-card kpi-card--primary">
+                        <div class="kpi-icon">🏪</div>
+                        <div class="kpi-content">
+                            <div class="kpi-value">20</div>
+                            <div class="kpi-label">Total Stores</div>
+                            <div class="kpi-status status--success">Active</div>
+                        </div>
+                    </div>
+                    <div class="kpi-card kpi-card--secondary">
+                        <div class="kpi-icon">📦</div>
+                        <div class="kpi-content">
+                            <div class="kpi-value">30</div>
+                            <div class="kpi-label">Total Products</div>
+                            <div class="kpi-status status--success">Managed</div>
+                        </div>
+                    </div>
+                    <div class="kpi-card kpi-card--accent">
+                        <div class="kpi-icon">💰</div>
+                        <div class="kpi-content">
+                            <div class="kpi-value">$9.52M</div>
+                            <div class="kpi-label">Inventory Value</div>
+                            <div class="kpi-status status--success">Healthy</div>
+                        </div>
+                    </div>
+                    <div class="kpi-card kpi-card--warning">
+                        <div class="kpi-icon">🔄</div>
+                        <div class="kpi-content">
+                            <div class="kpi-value">62.31x</div>
+                            <div class="kpi-label">Turnover Ratio</div>
+                            <div class="kpi-status status--warning">Good</div>
+                        </div>
+                    </div>
+                    <div class="kpi-card kpi-card--success">
+                        <div class="kpi-icon">✅</div>
+                        <div class="kpi-content">
+                            <div class="kpi-value">100%</div>
+                            <div class="kpi-label">Fill Rate</div>
+                            <div class="kpi-status status--success">Excellent</div>
+                        </div>
+                    </div>
+                    <div class="kpi-card kpi-card--danger">
+                        <div class="kpi-icon">⚠️</div>
+                        <div class="kpi-content">
+                            <div class="kpi-value">8</div>
+                            <div class="kpi-label">Critical Alerts</div>
+                            <div class="kpi-status status--error">Urgent</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Store Performance Section -->
+            <section class="dashboard-section" id="store-performance">
+                <h2 class="section-title">Store Performance Analysis</h2>
+                <div class="chart-grid">
+                    <div class="chart-container">
+                        <h3 class="chart-title">Store Performance Rankings</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="storePerformanceChart" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div class="performance-insights">
+                        <h3 class="chart-title">Top Performers</h3>
+                        <div class="insights-list">
+                            <div class="insight-item insight-item--champion">
+                                <div class="insight-rank">🥇</div>
+                                <div class="insight-details">
+                                    <div class="insight-name">S005 South</div>
+                                    <div class="insight-metric">66.22x Turnover</div>
+                                    <div class="insight-revenue">$42,011 Revenue</div>
+                                </div>
+                            </div>
+                            <div class="insight-item insight-item--runner-up">
+                                <div class="insight-rank">🥈</div>
+                                <div class="insight-details">
+                                    <div class="insight-name">S001 North</div>
+                                    <div class="insight-metric">64.84x Turnover</div>
+                                    <div class="insight-revenue">$40,389 Revenue</div>
+                                </div>
+                            </div>
+                            <div class="insight-item insight-item--third">
+                                <div class="insight-rank">🥉</div>
+                                <div class="insight-details">
+                                    <div class="insight-name">S003 West</div>
+                                    <div class="insight-metric">64.60x Turnover</div>
+                                    <div class="insight-revenue">$38,748 Revenue</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABC Classification Section -->
+            <section class="dashboard-section" id="abc-classification">
+                <h2 class="section-title">ABC Classification Dashboard</h2>
+                <div class="chart-grid">
+                    <div class="chart-container">
+                        <h3 class="chart-title">Revenue Distribution</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="abcChart" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div class="abc-breakdown">
+                        <h3 class="chart-title">Classification Breakdown</h3>
+                        <div class="abc-items">
+                            <div class="abc-item abc-item--a">
+                                <div class="abc-label">Class A</div>
+                                <div class="abc-count">440 Products</div>
+                                <div class="abc-percentage">78.6% Revenue</div>
+                                <div class="abc-strategy">Tight Control</div>
+                            </div>
+                            <div class="abc-item abc-item--b">
+                                <div class="abc-label">Class B</div>
+                                <div class="abc-count">105 Products</div>
+                                <div class="abc-percentage">14.6% Revenue</div>
+                                <div class="abc-strategy">Moderate Control</div>
+                            </div>
+                            <div class="abc-item abc-item--c">
+                                <div class="abc-label">Class C</div>
+                                <div class="abc-count">55 Products</div>
+                                <div class="abc-percentage">6.8% Revenue</div>
+                                <div class="abc-strategy">Basic Control</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category Performance Section -->
+            <section class="dashboard-section" id="category-performance">
+                <h2 class="section-title">Category Performance Center</h2>
+                <div class="chart-container chart-container--full">
+                    <h3 class="chart-title">Revenue & Turnover by Category</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="categoryChart" height="400"></canvas>
+                    </div>
+                </div>
+                <div class="category-summary">
+                    <div class="category-cards">
+                        <div class="category-card category-card--clothing">
+                            <div class="category-name">Clothing</div>
+                            <div class="category-revenue">$30.4M</div>
+                            <div class="category-turnover">65.48x</div>
+                            <div class="category-status">Champion</div>
+                        </div>
+                        <div class="category-card category-card--electronics">
+                            <div class="category-name">Electronics</div>
+                            <div class="category-revenue">$16.5M</div>
+                            <div class="category-turnover">59.66x</div>
+                            <div class="category-status">Strong</div>
+                        </div>
+                        <div class="category-card category-card--furniture">
+                            <div class="category-name">Furniture</div>
+                            <div class="category-revenue">$12.7M</div>
+                            <div class="category-turnover">60.96x</div>
+                            <div class="category-status">Efficient</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seasonal Impact Section -->
+            <section class="dashboard-section" id="seasonal-impact">
+                <h2 class="section-title">Seasonal Impact Analysis</h2>
+                <div class="chart-grid">
+                    <div class="chart-container">
+                        <h3 class="chart-title">Seasonal Performance Index</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="seasonalChart" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div class="seasonal-insights">
+                        <h3 class="chart-title">Seasonal Highlights</h3>
+                        <div class="seasonal-items">
+                            <div class="seasonal-item seasonal-item--winter">
+                                <div class="seasonal-season">Winter</div>
+                                <div class="seasonal-index">103.7%</div>
+                                <div class="seasonal-revenue">$98.3M</div>
+                                <div class="seasonal-impact">Peak Season</div>
+                            </div>
+                            <div class="seasonal-item seasonal-item--summer">
+                                <div class="seasonal-season">Summer</div>
+                                <div class="seasonal-index">102.7%</div>
+                                <div class="seasonal-revenue">$66.4M</div>
+                                <div class="seasonal-impact">High</div>
+                            </div>
+                            <div class="seasonal-item seasonal-item--spring">
+                                <div class="seasonal-season">Spring</div>
+                                <div class="seasonal-index">97.0%</div>
+                                <div class="seasonal-revenue">$43.4M</div>
+                                <div class="seasonal-impact">Low</div>
+                            </div>
+                            <div class="seasonal-item seasonal-item--autumn">
+                                <div class="seasonal-season">Autumn</div>
+                                <div class="seasonal-index">96.6%</div>
+                                <div class="seasonal-revenue">$64.9M</div>
+                                <div class="seasonal-impact">Moderate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Critical Alerts Section -->
+            <section class="dashboard-section" id="critical-alerts">
+                <h2 class="section-title">Critical Alerts & Actions</h2>
+                <div class="alerts-grid">
+                    <div class="alert-summary">
+                        <h3 class="chart-title">Alert Overview</h3>
+                        <div class="alert-stats">
+                            <div class="alert-stat alert-stat--critical">
+                                <div class="alert-number">4</div>
+                                <div class="alert-label">Critical Items</div>
+                                <div class="alert-desc">Immediate action needed</div>
+                            </div>
+                            <div class="alert-stat alert-stat--investment">
+                                <div class="alert-number">$550K</div>
+                                <div class="alert-label">Investment Required</div>
+                                <div class="alert-desc">Emergency reorders</div>
+                            </div>
+                            <div class="alert-stat alert-stat--roi">
+                                <div class="alert-number">133.4%</div>
+                                <div class="alert-label">Expected ROI</div>
+                                <div class="alert-desc">Within 12 months</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="critical-items">
+                        <h3 class="chart-title">Most Critical Items</h3>
+                        <div class="critical-list">
+                            <div class="critical-item critical-item--urgent">
+                                <div class="critical-store">S003 West</div>
+                                <div class="critical-product">P0016 Clothing</div>
+                                <div class="critical-stock">32 units</div>
+                                <div class="critical-days">0.3 days</div>
+                                <div class="critical-status">CRITICAL</div>
+                            </div>
+                            <div class="critical-item critical-item--warning">
+                                <div class="critical-store">S002 South</div>
+                                <div class="critical-product">P0126 Clothing</div>
+                                <div class="critical-stock">90 units</div>
+                                <div class="critical-days">0.8 days</div>
+                                <div class="critical-status">URGENT</div>
+                            </div>
+                            <div class="critical-item critical-item--warning">
+                                <div class="critical-store">S005 South</div>
+                                <div class="critical-product">P0046 Clothing</div>
+                                <div class="critical-stock">123 units</div>
+                                <div class="critical-days">1.0 days</div>
+                                <div class="critical-status">URGENT</div>
+                            </div>
+                            <div class="critical-item critical-item--moderate">
+                                <div class="critical-store">S002 East</div>
+                                <div class="critical-product">P0066 Clothing</div>
+                                <div class="critical-stock">127 units</div>
+                                <div class="critical-days">1.0 days</div>
+                                <div class="critical-status">MODERATE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="dashboard-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>Urban Retail Co. - Inventory Management Dashboard</p>
+                    <p>Last updated: December 31, 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

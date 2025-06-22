@@ -1,0 +1,491 @@
+{
+    "title": "Urban Retail Co. - Deep-Dive Inventory Management Analysis",
+    "subtitle": "Comprehensive Strategic Review & Action Plan",
+    "date": "2023-12-31",
+    "executive_summary": {
+      "total_stores": 20,
+      "total_inventory_value": 9519914.11,
+      "avg_turnover_ratio": 62.31,
+      "fill_rate": 100.0,
+      "critical_alerts": 11,
+      "total_potential_benefit": 1400000,
+      "immediate_investment_required": 514950
+    },
+    "sections": [
+      {
+        "id": 1,
+        "title": "Executive KPI Dashboard",
+        "subtitle": "High-Level Performance Metrics & Business Health",
+        "insights": [
+          "Perfect 100% fill rate maintained across all 20 store locations demonstrates excellent customer service",
+          "Portfolio of 30 SKUs across 184,700 total units represents $9.52M inventory investment",
+          "62.3x average turnover ratio indicates healthy inventory velocity but room for 10% improvement",
+          "ABC classification shows 78.6% revenue concentration in Class A items - healthy Pareto distribution",
+          "8 critical alerts signal need for proactive reorder management"
+        ],
+        "key_metrics": {
+          "total_stores": 20,
+          "total_skus": 30,
+          "total_units": 184700,
+          "total_value": 9519914.11,
+          "turnover_ratio": 62.31,
+          "fill_rate": 100.0,
+          "fast_movers": 150,
+          "slow_movers": 150,
+          "class_a_items": 440,
+          "class_a_revenue_pct": 78.61
+        },
+        "status": "HEALTHY",
+        "recommendation": "Focus on turnover optimization and proactive reorder management"
+      },
+      {
+        "id": 2,
+        "title": "Store & Regional Performance Deep Dive",
+        "subtitle": "Location-Specific Analysis & Best Practice Identification",
+        "insights": [
+          "S005 South emerges as network champion with 66.2x turnover ratio - 15% above network average",
+          "9.0x performance gap exists between top (S005 South) and bottom (S005 West) performers",
+          "North region leads with 63.3x average turnover, suggesting replicable operational excellence",
+          "West region shows highest alert concentration (3 alerts) indicating supply chain stress",
+          "Store performance correlates with regional management practices rather than market conditions"
+        ],
+        "regional_performance": [
+          {
+            "region": "North",
+            "avg_turnover": 63.3,
+            "daily_revenue": 39416,
+            "alerts": 2
+          },
+          {
+            "region": "South",
+            "avg_turnover": 62.4,
+            "daily_revenue": 38646,
+            "alerts": 2
+          },
+          {
+            "region": "West",
+            "avg_turnover": 61.9,
+            "daily_revenue": 37767,
+            "alerts": 3
+          },
+          {
+            "region": "East",
+            "avg_turnover": 61.6,
+            "daily_revenue": 39319,
+            "alerts": 1
+          }
+        ],
+        "top_performers": [
+          {
+            "store": "S005 South",
+            "turnover": 66.22,
+            "revenue": 42011
+          },
+          {
+            "store": "S001 North",
+            "turnover": 64.84,
+            "revenue": 40389
+          },
+          {
+            "store": "S003 West",
+            "turnover": 64.6,
+            "revenue": 38748
+          }
+        ],
+        "recommendation": "Implement S005 South best practices across network; investigate West region supply chain issues"
+      },
+      {
+        "id": 3,
+        "title": "Critical Risk & Reorder Analysis",
+        "subtitle": "Immediate Action Items & Stockout Prevention",
+        "insights": [
+          "11 CRITICAL items require immediate reordering within 24-48 hours to prevent stockouts",
+          "Most critical: S003 P0016 has only 0.3 days of supply remaining - customer impact imminent",
+          "$515K emergency investment required to prevent estimated $500K in lost sales",
+          "Clothing category dominates critical alerts (73%) indicating supply chain vulnerability",
+          "Fast-moving Class A items comprise 100% of critical alerts - high revenue impact potential"
+        ],
+        "critical_items": [
+          {
+            "store": "S003",
+            "product": "P0016",
+            "category": "Clothing",
+            "current_stock": 32,
+            "days_supply": 0.3,
+            "order_qty": 1148
+          },
+          {
+            "store": "S002",
+            "product": "P0126",
+            "category": "Clothing",
+            "current_stock": 90,
+            "days_supply": 0.8,
+            "order_qty": 1019
+          },
+          {
+            "store": "S005",
+            "product": "P0046",
+            "category": "Clothing",
+            "current_stock": 123,
+            "days_supply": 1.0,
+            "order_qty": 1091
+          },
+          {
+            "store": "S002",
+            "product": "P0066",
+            "category": "Clothing",
+            "current_stock": 127,
+            "days_supply": 1.0,
+            "order_qty": 1125
+          },
+          {
+            "store": "S001",
+            "product": "P0171",
+            "category": "Electronics",
+            "current_stock": 70,
+            "days_supply": 0.8,
+            "order_qty": 850
+          }
+        ],
+        "financial_impact": {
+          "emergency_investment": 514950,
+          "prevented_lost_sales": 500000,
+          "net_benefit": -14950
+        },
+        "recommendation": "Execute emergency reorders immediately; implement automated reorder points"
+      },
+      {
+        "id": 4,
+        "title": "Inventory Turnover Performance Analysis",
+        "subtitle": "SKU-Level Velocity & Optimization Opportunities",
+        "insights": [
+          "P0066 Clothing leads with 104.5x turnover - 67% above network average, indicating strong demand",
+          "Clothing dominates top performers with 5 of top 5 SKUs - category optimization opportunity",
+          "Toys category shows concerning pattern with multiple non-movers below 50x turnover",
+          "150 non-moving items represent significant working capital optimization opportunity",
+          "Performance spread from 104.5x to 35.9x indicates need for portfolio rationalization"
+        ],
+        "top_performers": [
+          {
+            "product": "P0066",
+            "category": "Clothing",
+            "turnover": 104.49,
+            "type": "FAST_MOVER"
+          },
+          {
+            "product": "P0066",
+            "category": "Clothing",
+            "turnover": 101.5,
+            "type": "FAST_MOVER"
+          },
+          {
+            "product": "P0069",
+            "category": "Clothing",
+            "turnover": 99.56,
+            "type": "FAST_MOVER"
+          },
+          {
+            "product": "P0016",
+            "category": "Clothing",
+            "turnover": 93.25,
+            "type": "FAST_MOVER"
+          },
+          {
+            "product": "P0178",
+            "category": "Clothing",
+            "turnover": 92.11,
+            "type": "FAST_MOVER"
+          }
+        ],
+        "worst_performers": [
+          {
+            "product": "P0083",
+            "category": "Toys",
+            "turnover": 48.14,
+            "type": "NON_MOVER"
+          },
+          {
+            "product": "P0083",
+            "category": "Toys",
+            "turnover": 45.8,
+            "type": "NON_MOVER"
+          },
+          {
+            "product": "P0083",
+            "category": "Toys",
+            "turnover": 45.2,
+            "type": "NON_MOVER"
+          },
+          {
+            "product": "P0096",
+            "category": "Toys",
+            "turnover": 36.3,
+            "type": "NON_MOVER"
+          },
+          {
+            "product": "P0096",
+            "category": "Toys",
+            "turnover": 35.9,
+            "type": "NON_MOVER"
+          }
+        ],
+        "movement_distribution": {
+          "fast_movers": 150,
+          "medium_movers": 150,
+          "slow_movers": 150,
+          "non_movers": 150
+        },
+        "recommendation": "Focus resources on top-performing Clothing SKUs; liquidate Toys non-movers"
+      },
+      {
+        "id": 5,
+        "title": "Category & ABC Classification Deep Dive",
+        "subtitle": "Revenue Concentration & Category Strategy",
+        "insights": [
+          "Clothing dominates with $30.4M revenue (45% of total) and highest 65.5x turnover rate",
+          "Furniture achieves best ROI at 67.8% despite smaller scale - efficiency champion",
+          "Electronics underperforms with only 59.7x turnover - significant improvement opportunity",
+          "ABC analysis reveals healthy concentration: 440 A-items drive 78.6% of revenue",
+          "Category-specific ABC distribution shows Clothing's dominance in Class A items (202 SKUs)"
+        ],
+        "category_performance": [
+          {
+            "category": "Clothing",
+            "revenue": 30443287,
+            "turnover": 65.48,
+            "roi": 56.08,
+            "rank": 1
+          },
+          {
+            "category": "Electronics",
+            "revenue": 16546543,
+            "turnover": 59.66,
+            "roi": 53.3,
+            "rank": 2
+          },
+          {
+            "category": "Furniture",
+            "revenue": 12713310,
+            "turnover": 60.96,
+            "roi": 67.8,
+            "rank": 3
+          },
+          {
+            "category": "Toys",
+            "revenue": 6518860,
+            "turnover": 61.34,
+            "roi": 59.16,
+            "rank": 4
+          },
+          {
+            "category": "Groceries",
+            "revenue": 4370124,
+            "turnover": 60.91,
+            "roi": 61.9,
+            "rank": 5
+          }
+        ],
+        "abc_distribution": {
+          "class_a": {
+            "count": 440,
+            "revenue_pct": 78.61
+          },
+          "class_b": {
+            "count": 105,
+            "revenue_pct": 14.63
+          },
+          "class_c": {
+            "count": 55,
+            "revenue_pct": 6.76
+          }
+        },
+        "category_abc_breakdown": {
+          "Clothing": {
+            "A": 202,
+            "B": 15,
+            "C": 3
+          },
+          "Electronics": {
+            "A": 88,
+            "B": 45,
+            "C": 27
+          },
+          "Furniture": {
+            "A": 80,
+            "B": 28,
+            "C": 12
+          },
+          "Toys": {
+            "A": 40,
+            "B": 11,
+            "C": 9
+          },
+          "Groceries": {
+            "A": 30,
+            "B": 6,
+            "C": 4
+          }
+        },
+        "recommendation": "Double down on Clothing expansion; optimize Electronics operations; maintain Furniture efficiency"
+      },
+      {
+        "id": 6,
+        "title": "Seasonality & Weather Impact Analysis",
+        "subtitle": "Demand Patterns & Forecasting Intelligence",
+        "insights": [
+          "Winter dominates with $98.3M revenue (36% of annual) - clear seasonal concentration",
+          "Clothing shows extreme winter sensitivity with 127.1 seasonal index - 27% above baseline",
+          "Spring represents lowest opportunity at $43.4M revenue - inventory reduction candidate",
+          "Weather conditions create 8-point performance spread (Sunny 102.3 vs Rainy 94.0)",
+          "19% of winter combinations show high impact vs only 1% in spring - planning opportunity"
+        ],
+        "seasonal_performance": [
+          {
+            "season": "Winter",
+            "revenue": 98321730,
+            "index": 103.73,
+            "high_impact_pct": 19.0
+          },
+          {
+            "season": "Summer",
+            "revenue": 66363140,
+            "index": 102.73,
+            "high_impact_pct": 11.5
+          },
+          {
+            "season": "Autumn",
+            "revenue": 64856684,
+            "index": 96.57,
+            "high_impact_pct": 1.5
+          },
+          {
+            "season": "Spring",
+            "revenue": 43443937,
+            "index": 96.98,
+            "high_impact_pct": 1.0
+          }
+        ],
+        "weather_impact": [
+          {
+            "condition": "Sunny",
+            "index": 102.3,
+            "revenue": 57774000
+          },
+          {
+            "condition": "Snowy",
+            "index": 102.0,
+            "revenue": 58794000
+          },
+          {
+            "condition": "Cloudy",
+            "index": 100.5,
+            "revenue": 58066000
+          },
+          {
+            "condition": "Rainy",
+            "index": 94.0,
+            "revenue": 55443000
+          }
+        ],
+        "peak_categories": {
+          "Winter": {
+            "category": "Clothing",
+            "index": 127.1
+          },
+          "Summer": {
+            "category": "Groceries",
+            "index": 121.1
+          },
+          "Spring": {
+            "category": "Furniture",
+            "index": 101.0
+          },
+          "Autumn": {
+            "category": "Electronics",
+            "index": 101.1
+          }
+        },
+        "recommendation": "Build winter Clothing inventory 15% above baseline; reduce spring inventory allocation"
+      },
+      {
+        "id": 7,
+        "title": "Strategic Action Plan & Financial Impact",
+        "subtitle": "Prioritized Recommendations & ROI Projections",
+        "insights": [
+          "Immediate $515K investment in emergency reorders prevents $500K lost sales - slight net cost justified",
+          "$1.15M working capital release available from non-mover liquidation",
+          "10% inventory efficiency improvement unlocks additional $951K working capital",
+          "Total $1.4M+ Year 1 benefit achievable through systematic optimization",
+          "S005 South best practices replication could improve network turnover by 5-8%"
+        ],
+        "immediate_actions": [
+          {
+            "action": "Emergency Reorders",
+            "timeline": "24-48 Hours",
+            "investment": 514950,
+            "benefit": 500000
+          },
+          {
+            "action": "Expedite Shipping",
+            "timeline": "24-48 Hours",
+            "investment": 25000,
+            "benefit": 100000
+          },
+          {
+            "action": "Critical Alert System",
+            "timeline": "1 Week",
+            "investment": 10000,
+            "benefit": 50000
+          }
+        ],
+        "short_term_actions": [
+          {
+            "action": "Non-Mover Liquidation",
+            "timeline": "1-2 Weeks",
+            "investment": 0,
+            "benefit": 1151021
+          },
+          {
+            "action": "Inventory Redistribution",
+            "timeline": "2-4 Weeks",
+            "investment": 50000,
+            "benefit": 200000
+          },
+          {
+            "action": "Safety Stock Optimization",
+            "timeline": "1 Month",
+            "investment": 0,
+            "benefit": 150000
+          }
+        ],
+        "strategic_actions": [
+          {
+            "action": "Category Optimization",
+            "timeline": "1-3 Months",
+            "investment": 100000,
+            "benefit": 300000
+          },
+          {
+            "action": "Seasonal Preparation",
+            "timeline": "2-3 Months",
+            "investment": 200000,
+            "benefit": 400000
+          },
+          {
+            "action": "Best Practice Replication",
+            "timeline": "3-6 Months",
+            "investment": 150000,
+            "benefit": 500000
+          }
+        ],
+        "financial_summary": {
+          "total_investment": 1049950,
+          "total_benefit": 2451021,
+          "net_benefit": 1401071,
+          "roi_percentage": 133.4,
+          "payback_months": 6
+        },
+        "recommendation": "Execute 3-phase implementation: Emergency stabilization \u2192 Working capital optimization \u2192 Strategic transformation"
+      }
+    ]
+  }
